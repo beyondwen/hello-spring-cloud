@@ -6,10 +6,10 @@ spring:
       label: master
       server:
         git:
-          uri: http://11.0.0.184:10080/spring-cloud-study/remote-config.git
+          uri: http://39.104.50.29:7006/spring-cloud-study/remote-config.git
           search-paths: repo
           username: wenhao
-          password: 123456
+          password: wenhao151
   zipkin:
     base-url: http://localhost:9411
 server:

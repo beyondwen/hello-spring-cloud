@@ -5,3 +5,4 @@ spring:
       name: zipkin
       label: master
       profile: dev
+

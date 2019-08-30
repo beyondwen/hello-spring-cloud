@@ -11,6 +11,6 @@ public class AdminController {
 
     @GetMapping(value = "hi")
     public String sayHi(@RequestParam(value = "message") String message) {
-        return String.format("Hi，your message is : %s i am from port : %s", message);
+        return String.format("Hi，your message is : %s", message);
     }
 }

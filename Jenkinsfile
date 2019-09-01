@@ -14,7 +14,7 @@ cp target/hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar docker'''
       steps {
         sh '''pwd
 cd hello-spring-cloud-eureka/docker
-docker build -t 39.104.50.29:7007/eureka .'''
+pwd'''
       }
     }
   }

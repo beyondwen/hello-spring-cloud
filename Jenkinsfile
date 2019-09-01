@@ -20,5 +20,30 @@ docker login 11.0.0.184:8111 -u admin -p Harbor12345
 docker push 11.0.0.184:8111/wenhao/wenhao/test'''
       }
     }
+    stage('run') {
+      agent {
+        docker {
+          image 'pwbdod/docker-compose-aws-tf'
+        }
+
+      }
+      steps {
+        sh '''pwd
+cd hello-spring-cloud-eureka/docker
+docker-compose version
+docker-compose down
+docker-compose up -d
+
+
+
+
+'''
+      }
+    }
+    stage('clean') {
+      steps {
+        sh 'docker rmi $(docker images -q -f dangling=true)'
+      }
+    }
   }
 }

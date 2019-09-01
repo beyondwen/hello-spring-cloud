@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('package') {
+    stage('build') {
       steps {
         sh '''pwd
 cd hello-spring-cloud-eureka/

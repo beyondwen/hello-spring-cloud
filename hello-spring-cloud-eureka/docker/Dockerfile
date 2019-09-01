@@ -11,6 +11,8 @@ WORKDIR /var/jenkins_home/workspace/hello-spring-cloud_master/hello-spring-cloud
 
 RUN mkdir app
 
+RUN pwd
+
 COPY hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar app/app.jar
 #ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "tcp://192.168.75.128:8888", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=prod"]
 #ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/home/project/app.jar"]

@@ -23,8 +23,10 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
     stage('run') {
       steps {
         sh '''pwd
-cd hello-spring-cloud-eureka/docker 
-./var/jenkins_home/workspace/docker-compose version
+cd hello-spring-cloud-eureka/docker
+wget https://raw.githubusercontent.com/topsale/resources/master/docker/docker-compose
+chmod +x docker-compose 
+docker-compose version
 
 
 

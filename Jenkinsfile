@@ -24,8 +24,8 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
       steps {
         sh '''pwd
 cd hello-spring-cloud-eureka/docker
-/usr/local/bin/docker-compose down
-/usr/local/bin/docker-compose up -d
+docker-compose down
+docker-compose up -d
 
 
 

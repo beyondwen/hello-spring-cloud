@@ -13,7 +13,7 @@ cp target/hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar docker'''
       agent any
       steps {
         sh '''pwd
-cd docker
+/var/jenkins_home/workspace/hello-spring-cloud_master/hello-spring-cloud-eureka/docker
 service docker start
 docker build -t 39.104.50.29:7007/eureka .'''
       }

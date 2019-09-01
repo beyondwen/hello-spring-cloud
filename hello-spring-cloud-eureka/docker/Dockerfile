@@ -8,7 +8,7 @@ ENV DOCKERIZE_VERSION v0.6.1
 #    && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
 #    && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
-COPY hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar app.jar
+COPY .hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar /var/jenkins_home/workspace/hello-spring-cloud_master/hello-spring-cloud-eureka
 #ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "tcp://192.168.75.128:8888", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=prod"]
 #ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/home/project/app.jar"]
 #

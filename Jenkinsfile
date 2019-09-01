@@ -22,9 +22,8 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
     }
     stage('run') {
       steps {
-        sh '''cd docker 
-docker-compose down 
-docker-compose uo -d'''
+        sh '''pwd
+'''
       }
     }
   }

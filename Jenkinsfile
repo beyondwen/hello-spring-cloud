@@ -15,8 +15,8 @@ docker build -t wenhao/test .
     }
     stage('push') {
       steps {
-        sh '''docker tag wenhao/test http://39.104.50.29:7007/wenhao/wenhao/test
-docker push http://39.104.50.29:7007/wenhao/wenhao/test'''
+        sh '''docker tag wenhao/test http://39.104.50.29:7007/wenhao/test
+docker push http://39.104.50.29:7007/wenhao/test'''
       }
     }
   }

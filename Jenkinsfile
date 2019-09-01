@@ -31,6 +31,8 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
         sh '''pwd
 cd hello-spring-cloud-eureka/docker
 docker-compose version
+docker-compose down
+docker-compose up -d
 
 
 

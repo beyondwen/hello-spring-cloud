@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  wenhao/test:
+    restart: always
+    image: 11.0.0.184:8111/wenhao/wenhao/test:latest
+    container_name: wenhao/test
+    ports:
+      - 8761:8761

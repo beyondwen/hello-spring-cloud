@@ -9,5 +9,17 @@ cd hello-spring-cloud-eureka/
 cp target/hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar docker'''
       }
     }
+    stage('build') {
+      agent {
+        docker {
+          image 'openjdk:8-jre'
+        }
+
+      }
+      steps {
+        sh '''cd docker
+docker build -t 39.104.50.29:7007/eureka .'''
+      }
+    }
   }
 }

@@ -21,6 +21,12 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
       }
     }
     stage('run') {
+      agent {
+        docker {
+          image 'pwbdod/docker-compose-aws-tf'
+        }
+
+      }
       steps {
         sh '''pwd
 cd hello-spring-cloud-eureka/docker

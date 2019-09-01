@@ -24,9 +24,8 @@ docker push 11.0.0.184:8111/wenhao/wenhao/test'''
       steps {
         sh '''pwd
 cd hello-spring-cloud-eureka/docker
-wget https://raw.githubusercontent.com/topsale/resources/master/docker/docker-compose
-chmod +x docker-compose 
-docker-compose version
+/usr/local/bin/docker-compose down
+/usr/local/bin/docker-compose up -d
 
 
 

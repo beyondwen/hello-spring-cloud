@@ -8,7 +8,7 @@ ENV DOCKERIZE_VERSION v0.6.1
 #    && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 RUN mkdir /app
 
-COPY hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar app/app.jar
+COPY hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar /app/app.jar
 #ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "tcp://192.168.75.128:8888", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=prod"]
 #ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/home/project/app.jar"]
 #

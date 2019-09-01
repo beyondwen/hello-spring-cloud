@@ -9,6 +9,7 @@ cd hello-spring-cloud-eureka/
 cp target/hello-spring-cloud-eureka-0.0.1-SNAPSHOT.jar docker
 pwd
 cd docker
+docker build -t wenhao/test .
 '''
       }
     }
